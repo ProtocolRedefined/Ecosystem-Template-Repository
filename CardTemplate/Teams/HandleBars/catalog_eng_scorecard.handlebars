@@ -30,7 +30,8 @@
             {{#each this.data.service.scorecards.edges}}
               {
                 "type": "TextBlock",
-                "text": "{{this.node.description}}"
+                "text": "{{this.node.description}}",
+		"wrap"" true
               },
             {{/each}}
             {
