@@ -22,6 +22,7 @@
       "columns": [
         {
           "type": "Column",
+	  "width": "stretch",
           "items": [
             {
               "type": "TextBlock",
@@ -30,8 +31,7 @@
             {{#each this.data.service.scorecards.edges}}
               {
                 "type": "TextBlock",
-                "text": "{{this.node.description}}",
-		"wrap": true
+                "text": "{{this.node.description}}"
               },
             {{/each}}
             {
